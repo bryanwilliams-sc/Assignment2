@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ca.williams.assignment2
+package ca.willi348.assignment2
 
 import android.content.Context
 import android.content.Intent
@@ -54,12 +54,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import ca.williams.assignment2.data.DataSource
-import ca.williams.assignment2.data.OrderUiState
-import ca.williams.assignment2.ui.OrderSummaryScreen
-import ca.williams.assignment2.ui.SelectionViewModel
-import ca.williams.assignment2.ui.ShowOptionsScreen
-import ca.williams.assignment2.ui.StartOptionsScreen
+import ca.willi348.assignment2.data.DataSource
+import ca.willi348.assignment2.ui.OrderSummaryScreen
+import ca.willi348.assignment2.ui.SelectionViewModel
+import ca.willi348.assignment2.ui.ShowOptionsScreen
+import ca.willi348.assignment2.ui.StartOptionsScreen
 import kotlin.random.Random
 
 enum class SelectionScreen(@StringRes val title: Int) {

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ca.williams.assignment2"
+    namespace = "ca.willi348.assignment2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ca.williams.assignment2"
+        applicationId = "ca.willi348.assignment2"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

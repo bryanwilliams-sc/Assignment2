@@ -1,4 +1,4 @@
-package ca.williams.assignment2.ui.theme
+package ca.willi348.assignment2.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

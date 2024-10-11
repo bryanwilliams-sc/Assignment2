@@ -1,4 +1,4 @@
-package ca.williams.assignment2
+package ca.willi348.assignment2
 
 import org.junit.Test
 

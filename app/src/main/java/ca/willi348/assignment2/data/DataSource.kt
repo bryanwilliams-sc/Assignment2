@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ca.williams.assignment2.data
+package ca.willi348.assignment2.data
 
-import ca.williams.assignment2.R
+import ca.willi348.assignment2.R
 
 object DataSource {
     val options = listOf(

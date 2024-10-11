@@ -13,20 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ca.williams.assignment2.ui
+package ca.willi348.assignment2.ui
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import ca.williams.assignment2.data.DataSource
-import ca.williams.assignment2.data.OrderUiState
+import ca.willi348.assignment2.data.DataSource
+import ca.willi348.assignment2.data.OrderUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
-import java.text.NumberFormat
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
 import kotlin.random.Random
 
 

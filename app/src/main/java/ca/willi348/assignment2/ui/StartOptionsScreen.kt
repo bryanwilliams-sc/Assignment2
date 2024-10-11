@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ca.williams.assignment2.ui
+package ca.willi348.assignment2.ui
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -34,9 +34,9 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ca.williams.assignment2.R
-import ca.williams.assignment2.data.DataSource
-import ca.williams.assignment2.ui.theme.SelectionTheme
+import ca.willi348.assignment2.R
+import ca.willi348.assignment2.data.DataSource
+import ca.willi348.assignment2.ui.theme.SelectionTheme
 import kotlin.collections.List
 
 /**
