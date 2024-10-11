@@ -31,7 +31,8 @@
     <string name="five_dolla">$5</string>
     <string name="gum">a Pack of Gum</string>
 
-    <string name="other_options">This is what you could\'ve got!</string>
+    <string name="other_options">Are you sure you want that  ?</string>
+    <string name="change_or_keep">You can keep what you chose, OR you could take this instead!</string>
     <string name="cancel">Restart!</string>
     <string name="next">Next</string>
     <string name="order_summary">Order Summary</string>
@@ -40,6 +41,7 @@
     <string name="select_details">You Won \n%s!</string>
     <string name="try_again">You can try again or claim your win!</string>
     <string name="back_button">Back</string>
+    <string name="your_choice">The Box YOU Chose</string>
 
     <string name="about_asst2">About Assignment 2</string>
     <string name="assignment2">This is Bryan Williams Assignment 2!\nYou May Choose 1 of 5 random boxes to win a prize! You will then be able to see the options you missed out on before finally seeing what you won!</string>

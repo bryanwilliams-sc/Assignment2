@@ -169,10 +169,13 @@ fun SelectionApp(
             composable(route = SelectionScreen.Options.name) {
                 val context = LocalContext.current
                 ShowOptionsScreen(
-                    onNextButtonClicked = { navController.navigate(SelectionScreen.Summary.name) },
-                    options = viewModel.chosenCases.map{ id:Int -> context.resources.getString(id) },
+                    onNextButtonClicked = {
+                        viewModel.setChoice(it)
+                        navController.navigate(SelectionScreen.Summary.name)
+                                          },
+                    options = viewModel.chosenCases,
                     modifier = Modifier.fillMaxHeight(),
-                    previouslySelected = stringResource(uiState.selectedOption)
+                    previouslySelected = uiState.selectedOption
                 )
             }
             composable(route = SelectionScreen.Summary.name) {

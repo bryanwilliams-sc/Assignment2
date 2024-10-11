@@ -39,6 +39,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -47,13 +48,15 @@ import ca.williams.assignment2.ui.theme.SelectionTheme
 
 @Composable
 fun ShowOptionsScreen(
-    options: List<String>,
-    onSelectionChanged: (String) -> Unit = {},
-    onNextButtonClicked: () -> Unit = {},
+    options: Array<Int>,
+    onSelectionChanged: (Int) -> Unit = {},
+    onNextButtonClicked: (Int) -> Unit = {},
     modifier: Modifier = Modifier,
-    previouslySelected: String
+    previouslySelected: Int,
+
 ) {
-    var selectedValue by rememberSaveable { mutableStateOf("") }
+    var selectedValue by rememberSaveable { mutableStateOf(0) }
+    var unselected: Int = 0
 
     Column(
         modifier = modifier,
@@ -69,50 +72,45 @@ fun ShowOptionsScreen(
         )
         Column(modifier = Modifier.padding(dimensionResource(R.dimen.padding_large))) {
             options.forEach { item ->
-                if(item != previouslySelected){
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium))
-                    ) {
-                        Text(item, fontSize = 24.sp)
-                    }
-                    HorizontalDivider(
-                        thickness = dimensionResource(R.dimen.thickness_divider),
-                        modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium))
-                    )
+                if (item != previouslySelected) {
+                    unselected = item
                 }
 
+            }
+            Text(
+                text = stringResource(R.string.change_or_keep),
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold
 
-            }
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(dimensionResource(R.dimen.padding_medium)),
-                horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
-                verticalAlignment = Alignment.Bottom
-            ) {
-                OutlinedButton(
-                    modifier = Modifier.weight(7f),
-                    // the button is enabled when the user makes a selection
-                    onClick = onNextButtonClicked
-                ) {
-                    Text(stringResource(R.string.next))
-                }
-            }
-                }
+            )
+                SelectBoxButton(
+                    labelResourceId = R.string.your_choice,
+                    itemContained = previouslySelected,
+                    onClick = { onNextButtonClicked(previouslySelected) },
+                    modifier = Modifier.fillMaxWidth()
+                )
+                SelectBoxButton(
+                    labelResourceId = unselected,
+                    itemContained = unselected,
+                    onClick = { onNextButtonClicked(unselected) },
+                    modifier = Modifier.fillMaxWidth()
+                )
+        }
 
     }
 
 }
+
+
 
 @Preview
 @Composable
 fun SelectOptionPreview() {
     SelectionTheme {
         ShowOptionsScreen(
-            options = listOf("Option 1", "Option 2", "Option 3", "Option 4"),
+            options = arrayOf(),
             modifier = Modifier.fillMaxHeight(),
-            previouslySelected = "Option 4"
+            previouslySelected = 0
         )
     }
 }
