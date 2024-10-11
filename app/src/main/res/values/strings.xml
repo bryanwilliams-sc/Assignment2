@@ -1,0 +1,48 @@
+<!--
+     Copyright (C) 2023 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          https://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">Select a box, Win a prize!</string>
+    <string name="select_box">Select A Box</string>
+    <string name="box_one">Box 1</string>
+    <string name="box_two">Box 2</string>
+    <string name="box_three">Box 3</string>
+    <string name="box_four">Box 4</string>
+    <string name="box_five">Box 5</string>
+
+    <string name="one_million">$1,000,000</string>
+    <string name="one_hundred_thou">$100,000</string>
+    <string name="ten_thou">$10,000</string>
+    <string name="iPhone">an iPhone 16</string>
+    <string name="food">a Lifetime Food Supply</string>
+    <string name="Playstation">a PS5</string>
+    <string name="five_dolla">$5</string>
+    <string name="gum">a Pack of Gum</string>
+
+    <string name="other_options">This is what you could\'ve got!</string>
+    <string name="cancel">Restart!</string>
+    <string name="next">Next</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="send">Claim &amp; Share</string>
+    <string name="i_won">I just WON %s</string>
+    <string name="select_details">You Won \n%s!</string>
+    <string name="try_again">You can try again or claim your win!</string>
+    <string name="back_button">Back</string>
+
+    <string name="about_asst2">About Assignment 2</string>
+    <string name="assignment2">This is Bryan Williams Assignment 2!\nYou May Choose 1 of 5 random boxes to win a prize! You will then be able to see the options you missed out on before finally seeing what you won!</string>
+    <string name="ok">OK</string>
+    <string name="menu">Menu</string>
+</resources>
